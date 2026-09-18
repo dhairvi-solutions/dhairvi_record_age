@@ -1,0 +1,122 @@
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#0f766e;">Dhairvi Record Age – Days Since Created</h2>
+        <h3 class="oe_slogan">See how many calendar days have passed since a record was created.</h3>
+        <p class="oe_mt32 text-center">
+            Add a <strong>Record Age</strong> column that shows whole calendar days since a record was created.
+            The value is calculated from Odoo’s own <code>create_date</code> whenever you open the view.
+        </p>
+        <div class="oe_demo oe_picture oe_screenshot">
+            <img src="banner.png" alt="Dhairvi Record Age – days since created"/>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container" style="background-color:#f0fdfa;padding:24px 0;">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#134e4a;">Automatic Record Age</h2>
+        <p class="text-center">
+            Created today = <strong>0</strong>. Created yesterday = <strong>1</strong>.
+            Created ten days ago = <strong>10</strong>. Hours are ignored; this is a calendar-day count,
+            using the user’s timezone — not the browser clock.
+        </p>
+        <table class="table table-bordered" style="max-width:640px;margin:16px auto;">
+            <thead>
+                <tr>
+                    <th>Record</th>
+                    <th>Created On</th>
+                    <th>Record Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>ABC Opportunity</td><td>2026-09-01</td><td>13</td></tr>
+                <tr><td>XYZ Opportunity</td><td>2026-09-10</td><td>4</td></tr>
+                <tr><td>Test Opportunity</td><td>2026-09-14</td><td>0</td></tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span6">
+            <h3 class="oe_slogan" style="text-align:left;color:#0f766e;">No Configuration</h3>
+            <p class="oe_mt16">
+                Install the app and open a supported list view. There is no settings page,
+                no extra menu, no cron, and nothing to schedule.
+            </p>
+        </div>
+        <div class="oe_span6">
+            <h3 class="oe_slogan" style="text-align:left;color:#0f766e;">Lightweight</h3>
+            <p class="oe_mt16">
+                One computed integer field. It is not stored, so it cannot go out of date.
+                No extra database tables and no extra access rights.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span6">
+            <h3 class="oe_slogan" style="text-align:left;color:#0f766e;">No External Integration</h3>
+            <p class="oe_mt16">
+                Everything runs inside Odoo. No third-party APIs, webhooks, OAuth, or extra Python packages.
+            </p>
+        </div>
+        <div class="oe_span6">
+            <h3 class="oe_slogan" style="text-align:left;color:#0f766e;">Odoo Native</h3>
+            <p class="oe_mt16">
+                Standard ORM computed fields and inherited list/form views.
+                Compatible with Odoo 16, 17, 18, and 19.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container" style="background-color:#f8fafc;padding:24px 0;">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#134e4a;">Multi-Application Support</h2>
+        <p class="text-center">
+            Record Age appears on the apps you actually use. Unused applications are not forced as dependencies.
+            A Sales-only database installs and runs without Purchase, Manufacturing, or Helpdesk.
+        </p>
+        <div class="row text-center">
+            <div class="col-md-4 oe_mt16"><strong>CRM</strong><br/>Leads and opportunities</div>
+            <div class="col-md-4 oe_mt16"><strong>Sales</strong><br/>Quotations and orders</div>
+            <div class="col-md-4 oe_mt16"><strong>Purchase</strong><br/>RFQs and purchase orders</div>
+            <div class="col-md-4 oe_mt16"><strong>Invoicing</strong><br/>Customer invoices and vendor bills</div>
+            <div class="col-md-4 oe_mt16"><strong>Manufacturing</strong><br/>Manufacturing orders</div>
+            <div class="col-md-4 oe_mt16"><strong>Project</strong><br/>Tasks</div>
+            <div class="col-md-4 oe_mt16"><strong>Helpdesk</strong><br/>Tickets (if Helpdesk is installed)</div>
+        </div>
+        <p class="text-center oe_mt16">
+            CRM also includes search filters: Created Today, Older than 7 / 14 / 30 Days
+            (based on <code>create_date</code>).
+        </p>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#0f766e;">What you get</h2>
+        <ul>
+            <li>Single module <strong>Dhairvi Record Age</strong> — no extra companion apps</li>
+            <li>Computed <code>record_age_days</code> integer field, recalculated on each read</li>
+            <li>List and form columns on CRM, Sales, Purchase, Invoices, Manufacturing, Project, and Helpdesk when those apps are installed</li>
+            <li>CRM search filters on <code>create_date</code> (Created Today, Older than 7 / 14 / 30 Days)</li>
+            <li>Support for Odoo 16, 17, 18, and 19 from one codebase</li>
+            <li>LGPL-3 license — copy the module into your addons path and install</li>
+        </ul>
+        <h3 class="oe_slogan" style="color:#0f766e;">What this app does not include</h3>
+        <ul>
+            <li>No dashboard, configuration page, cron, portal, or website pages</li>
+            <li>No per-day color rules and no stored age values</li>
+            <li>No extra Python packages and no external services</li>
+        </ul>
+        <p class="text-center oe_mt32">
+            Questions?
+            <a href="mailto:info@dhairvi.com">info@dhairvi.com</a>
+        </p>
+    </div>
+</section>

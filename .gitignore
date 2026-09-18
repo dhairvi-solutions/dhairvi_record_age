@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local env / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Odoo / local noise
+*.log
+*.pid
+
+# Packaging archives
+*.zip
+*.tar
+*.tar.gz
+
+# Misc
+*.bak
+*.tmp
+.cache/
+node_modules/
